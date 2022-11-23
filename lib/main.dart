@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pizza/screens/detail_screen.dart';
-import 'package:pizza/screens/order_screen.dart';
 import 'package:pizza/screens/splash_screen.dart';
 
 void main() {
@@ -19,8 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
         primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const DetailScreen(),
+      home: const SplashScreen(),
     );
   }
 }

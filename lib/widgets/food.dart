@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza/screens/page_screen.dart';
 
 class FoodItems extends StatelessWidget {
   const FoodItems(
@@ -14,7 +15,7 @@ class FoodItems extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 330,
       width: 1800,
       child: Stack(
@@ -119,10 +120,16 @@ class FoodItems extends StatelessWidget {
                 color: const Color(0xffffa200),
                 border: Border.all(color: const Color(0xffdfdfdf), width: 2.0),
               ),
-              child: const Text(
-                "Order now",
-                style: TextStyle(fontFamily: 'Sora', fontSize: 16.0),
-                textAlign: TextAlign.center,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const PageScreen()));
+                },
+                child: const Text(
+                  "Order now",
+                  style: TextStyle(fontFamily: 'Sora', fontSize: 16.0),
+                  textAlign: TextAlign.center,
+                ),
               ),
             ),
           ),

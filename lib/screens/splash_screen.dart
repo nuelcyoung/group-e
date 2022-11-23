@@ -43,7 +43,10 @@ class _SplashScreenState extends State<SplashScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
-                            Icon(Icons.bolt_sharp,color: Colors.amber,),
+                            Icon(
+                              Icons.bolt_sharp,
+                              color: Colors.amber,
+                            ),
                             Text(
                               "Everyday new pizza\n eat fresh pizza",
                               style: TextStyle(
@@ -57,7 +60,10 @@ class _SplashScreenState extends State<SplashScreen> {
                           height: 30.0,
                         ),
                         ElevatedButton(
-                          onPressed: (() {}),
+                          onPressed: (() {Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const OrderScreen()));}),
                           style: ButtonStyle(
                             minimumSize: MaterialStateProperty.all(
                                 Size(screenWidth * 0.8, 50)),
@@ -65,8 +71,8 @@ class _SplashScreenState extends State<SplashScreen> {
                                 const Color(0xffdcbc85)),
                             foregroundColor:
                                 MaterialStateProperty.all(Colors.black),
-                            shape:
-                                MaterialStateProperty.all<RoundedRectangleBorder>(
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),
@@ -74,14 +80,20 @@ class _SplashScreenState extends State<SplashScreen> {
                           ),
                           child: const Text(
                             "Sign up with email",
-                            style: TextStyle(fontSize: 18.0, fontFamily: 'Sora'),
+                            style:
+                                TextStyle(fontSize: 18.0, fontFamily: 'Sora'),
                           ),
                         ),
                         const SizedBox(
                           height: 20.0,
                         ),
                         ElevatedButton(
-                          onPressed: (() {}),
+                          onPressed: (() {
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const OrderScreen()));
+                          }),
                           style: ButtonStyle(
                             minimumSize: MaterialStateProperty.all(
                                 Size(screenWidth * 0.8, 50)),
@@ -89,8 +101,8 @@ class _SplashScreenState extends State<SplashScreen> {
                                 const Color(0xffffa200)),
                             foregroundColor:
                                 MaterialStateProperty.all(Colors.black),
-                            shape:
-                                MaterialStateProperty.all<RoundedRectangleBorder>(
+                            shape: MaterialStateProperty.all<
+                                RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),
@@ -98,7 +110,8 @@ class _SplashScreenState extends State<SplashScreen> {
                           ),
                           child: const Text(
                             "Sign up with Google",
-                            style: TextStyle(fontSize: 18.0, fontFamily: 'Sora'),
+                            style:
+                                TextStyle(fontSize: 18.0, fontFamily: 'Sora'),
                           ),
                         ),
                       ],
@@ -111,7 +124,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   right: 20.9,
                   child: GestureDetector(
                       onTap: (() {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const OrderScreen()));
