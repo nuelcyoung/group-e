@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza/screens/detail_screen.dart';
 import 'package:pizza/screens/order_screen.dart';
 import 'package:pizza/screens/splash_screen.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
-      home: const OrderScreen(),
+      home: const DetailScreen(),
     );
   }
 }
