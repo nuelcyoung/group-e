@@ -63,7 +63,8 @@ class DetailScreen extends StatelessWidget {
             height: screenHeight * 0.3,
             width: screenWidth * 0.6,
             decoration: BoxDecoration(
-                color: const Color(0xffeae7df),
+              //boxShadow: BoxShadow(offset: Offset.infinite),
+                color: const Color(0xffebebeb),
                 border: Border.all(color: const Color(0xffdbd9da), width: 2.0),
                 borderRadius: BorderRadius.circular(200)),
           ),
