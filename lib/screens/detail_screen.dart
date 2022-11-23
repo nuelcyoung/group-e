@@ -12,7 +12,7 @@ class DetailScreen extends StatelessWidget {
       child: Stack(children: [
         Container(
           height: screenHeight * 0.5,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0xffeae7df),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.elliptical(420, 310),
@@ -27,8 +27,8 @@ class DetailScreen extends StatelessWidget {
             height: screenHeight * 0.45,
             width: screenWidth * 0.9,
             decoration: BoxDecoration(
-                color: Color(0xffeae7df),
-                border: Border.all(color: Color(0xffdbd9da), width: 2.0),
+                color: const Color(0xffeae7df),
+                border: Border.all(color: const Color(0xffdbd9da), width: 2.0),
                 borderRadius: BorderRadius.circular(3000)),
           ),
         ),
@@ -39,8 +39,8 @@ class DetailScreen extends StatelessWidget {
             height: screenHeight * 0.4,
             width: screenWidth * 0.8,
             decoration: BoxDecoration(
-                color: Color(0xffeae7df),
-                border: Border.all(color: Color(0xffdbd9da), width: 2.0),
+                color: const Color(0xffeae7df),
+                border: Border.all(color: const Color(0xffdbd9da), width: 2.0),
                 borderRadius: BorderRadius.circular(3000)),
           ),
         ),
@@ -51,8 +51,8 @@ class DetailScreen extends StatelessWidget {
             height: screenHeight * 0.35,
             width: screenWidth * 0.7,
             decoration: BoxDecoration(
-                color: Color(0xffeae7df),
-                border: Border.all(color: Color(0xffdbd9da), width: 2.0),
+                color: const Color(0xffeae7df),
+                border: Border.all(color: const Color(0xffdbd9da), width: 2.0),
                 borderRadius: BorderRadius.circular(200)),
           ),
         ),
@@ -63,8 +63,8 @@ class DetailScreen extends StatelessWidget {
             height: screenHeight * 0.3,
             width: screenWidth * 0.6,
             decoration: BoxDecoration(
-                color: Color(0xffeae7df),
-                border: Border.all(color: Color(0xffdbd9da), width: 2.0),
+                color: const Color(0xffeae7df),
+                border: Border.all(color: const Color(0xffdbd9da), width: 2.0),
                 borderRadius: BorderRadius.circular(200)),
           ),
         )
