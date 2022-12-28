@@ -481,10 +481,9 @@ class _AddCountState extends State<AddCount> {
                       child: const Text(
                         "-",
                         style: TextStyle(
-                            fontSize: 25.0,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.w700,
                             color: Colors.black),
-                        textAlign: TextAlign.center,
                       )),
                 ),
                 Positioned(
